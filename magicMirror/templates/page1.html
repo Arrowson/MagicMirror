@@ -1,0 +1,20 @@
+<ion-view title="" hide-back-button="true" id="page1" style="background-color:#000000;" onload="wc.startListening()">
+  <ion-content padding="true" class="has-header">
+    <h1 id="page1-heading1" style="color:#FFFFFF;font-weight:600;">{{clock | date: 'HH:mm:ss'}}</h1>
+    <h1 id="page1-heading3" style="color:#FFFFFF;font-weight:600;">{{clock | date: medium}}</h1>
+    <button id="page1-button1" ng-click="startListening()" class="button button-light button-large">Start Listening</button>
+    <h1 id="page1-heading4" style="color:#FFFFFF;">{{voiceContent}}</h1>
+    <div id="page1-markdown1" class="show-list-numbers-and-dots">
+      <p style="color:#CCCCCC;font-size:18px;">Weather for Today</p>
+
+      <p style="color:#CCCCCC;font-size:18px;">It is currently: {{summary}}
+      </p>
+
+      <p style="color:#CCCCCC;font-size:18px;">Temperature: {{temp}} degrees Fahrenheit</p>
+
+      <p style="color:#CCCCCC;font-size:18px;">Chance of Precipitation: {{precipitation}}%</p>
+
+      <p style="color:#CCCCCC;font-size:18px;">Powered by Dark Sky</p>
+    </div>
+  </ion-content>
+</ion-view>
